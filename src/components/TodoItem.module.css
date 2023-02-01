@@ -1,0 +1,60 @@
+.todoItem {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 12px;
+
+  height: 72px;
+  padding: 16px 22px;
+  
+  background: var(--gray-500);
+
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.todoItem .checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 16px;
+  width: 16px;
+
+  border: 2px solid var(--blue-100);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.todoItem .checkIcon:hover {
+  border-color: var(--blue-300);
+}
+
+.todoItem .checkIcon.checked {
+  border: 0;
+  background-color: var(--purple-300);
+  color: var(--white);
+}
+
+.todoItem .checkIcon.checked:hover {
+  background-color: var(--purple-100);
+}
+
+
+.todoItem p {
+  flex: 1;
+}
+
+.todoItem p.checked {
+  text-decoration: line-through;
+}
+
+.todoItem .removeIcon {
+  cursor: pointer;
+}
+
+.todoItem .removeIcon:hover {
+  color: var(--red-500);
+}

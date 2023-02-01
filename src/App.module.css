@@ -1,0 +1,45 @@
+.content {
+  width: 61vw;
+  max-width: 736px;
+  display: table;
+  margin: 0 auto;
+  margin-top: -27px;
+}
+
+.content .todoListInfo {
+  margin-top: 6.6vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content hr {
+  border-color: #333333;
+  margin-top: 2.5vh;
+}
+
+.content .emptyTodoList {
+  margin-top: 2.5vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .emptyTodoList p:first-of-type {
+  margin-top: 1.6vh;
+  font-weight: 700;
+}
+
+.content .emptyTodoList p {
+  color: #808080;
+  line-height: 22px;
+  font-size: 1rem;
+}
+
+.content .todoList {
+  margin-top: 2.5vh;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
